@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Mundo Animal - Pet Shop</title>
+    </form>
+</body>
+</html>
+
+</head>
+<body>
+    <header>
+        <h1><img src="LOGO MUNDO ANIMAL.png" alt="Mundo Animal Pet Shop Logo" style="max-width: 300px;"> </h1>
+        <h1>Bem-Vindo ao Mundo Animal</h1>
+        <div class="icon-buttons">
+            <a href="#sobre" class="icon-button">
+                <img src="—Pngtree—dog paw footprint_8699830.png" alt="Sobre">
+                Sobre Nós
+            </a>
+            <a href="#servicos" class="icon-button">
+                <img src="—Pngtree—dog paw footprint_8699830.png" alt="Serviços">
+                Serviços
+            </a>
+            <a href="#agendamento" class="icon-button">
+                <img src="—Pngtree—dog paw footprint_8699830.png" alt="Agendamento">
+                Agendamento
+            </a>
+            <a href="#creche" class="icon-button">
+                <img src="—Pngtree—dog paw footprint_8699830.png" alt="Creche">
+                Creche
+            </a>
+            <a href="#galeria" class="icon-button">
+                <img src="—Pngtree—dog paw footprint_8699830.png" alt="Galeria">
+                Galeria
+            </a>
+            <a href="#contato" class="icon-button">
+                <img src="—Pngtree—dog paw footprint_8699830.png" alt="Contato">
+                Contato
+            </a>
+        </div>
+    </header>
+
+    <section id="sobre-nos" class="minimalista">
+        <h2><img src="LOGO MUNDO ANIMAL.png" alt="Sobre"> Sobre Nós</h2>
+            <div class="container">
+                <div class="perfil">
+                    <img src="IMG_4226.jpg" alt="Foto dos Fundadores">
+                </div>
+                <div class="descricao">
+            <p>Conheça os fundadores, Vinicius e Ana Karolina, e sua incrível jornada no mundo do pet shop. Temos dedicado nossos esforços a cuidar e amar todos os nossos amigos de quatro patas. Vinicius e Ana Karolina são os corações e mentes por trás desta organização dedicada ao cuidado e bem-estar de nossos aumiguinhos. Unindo seus talentos, experiência e amor pelos animais, eles transformaram um sonho compartilhado em uma realidade inspiradora.
+                Desde a infância, ambos têm demonstrado uma compaixão profunda pelos animais, cuidando com todo carinho possível.</p>
+            <p>Ana Karolina, que está atualmente cursando Medicina Veterinária, traz conhecimento especializado e paixão pela saúde animal para o Mundo Animal Pet Shop. Nosso compromisso é fornecer o melhor atendimento possível para garantir que cada aumiguinho receba os cuidados que merece. Vinicius e Ana Karolina uniram suas vozes e determinação para criar esta organização. O que começou como um sonho logo se tornou uma missão de vida. Graças ao compromisso inabalável deles, nós cuidamos e protegemos vários aumiguinhos todos os dias. Nossa missão é continuar proporcionando um ambiente seguro e amoroso para todos os animais que cruzam nosso caminho, inspirando outros a se juntarem a nós nessa jornada de compaixão e dedicação.</p>
+            <p>No futuro, estamos animados com a possibilidade de expandir nossos serviços para incluir uma clínica veterinária, permitindo-nos oferecer uma gama ainda mais ampla de cuidados de saúde e bem-estar para os pets que cuidamos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Informações sobre o pet shop aqui -->
+    </section>
+    <section id="servicos">
+        <h2><img src="LOGO MUNDO ANIMAL.png" alt="Serviços"> Serviços</h2>
+        <section id="servicos">
+            <ul class="servicos-lista">
+                <li>
+                    <h3>Banho</h3>
+                    <p>Serviço de banho para deixar seu animal de estimação limpo e cheiroso. Utilizamos produtos de alta qualidade e técnicas profissionais para garantir o conforto do seu pet.</p>
+                </li>
+                <li>
+                    <h3>Banho a Domicílio</h3>
+                    <p>Oferecemos a comodidade do banho a domicílio, levando nossos serviços até a sua porta. Seu animal de estimação ficará confortável em seu ambiente familiar.</p>
+                </li>
+                <li>
+                    <h3>Creche</h3>
+                    <p>Nossa creche é um local seguro e divertido para seu pet passar o dia. Ele terá a oportunidade de brincar, socializar e receber a atenção de nossa equipe especializada.</p>
+                </li>
+                <li>
+                    <h3>Cromoterapia</h3>
+                    <p>A cromoterapia é uma terapia complementar que utiliza cores para promover o bem-estar do seu pet. Ela pode ajudar no tratamento de diversos problemas de saúde.</p>
+                </li>
+                <li>
+                    <h3>Passeio</h3>
+                    <p>Passeios regulares são essenciais para a saúde física e mental do seu pet. Oferecemos passeios seguros e divertidos para que ele possa explorar o mundo ao ar livre.</p>
+                </li>
+                <li>
+                    <h3>Tosa</h3>
+                    <p>Nossos serviços de tosa são realizados por profissionais experientes que conhecem as necessidades de cada raça. Seu pet ficará com um visual incrível.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Detalhes dos serviços oferecidos aqui -->
+    </section>
+
+    <section id="agendamento">
+        <h2><img src="LOGO MUNDO ANIMAL.png" alt="Agendamento"> Agendamento</h2>
+        <form id="agendamento-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="banho">Banho</option>
+                <option value="tosa">Tosa</option>
+                <!-- Adicione mais opções de serviço aqui -->
+            </select><br>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br>
+            <div class="campo">
+                <label for="horario">Horário:</label>
+                <select id="horario" name="horario" required>
+                    <option value="09:00">09:00 - 10:00</option>
+                    <option value="10:00">10:00 - 11:00</option>
+                    <option value="11:00">11:00 - 12:00</option>
+                    <!-- Adicione mais opções de horário aqui -->
+                </select>
+            </div>
+            <div id="horarios-adicionais">
+                <!-- Aqui serão adicionados os campos de horário adicionais -->
+            </div>
+    
+            <button type="button" id="adicionar-horario">Adicionar Horário</button>
+            <button type="submit">Agendar</button>
+        </form>
+        
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const adicionarHorarioButton = document.getElementById('adicionar-horario');
+            const horariosAdicionais = document.getElementById('horarios-adicionais');
+    
+            adicionarHorarioButton.addEventListener('click', function () {
+                const novoCampoHorario = document.createElement('div');
+                novoCampoHorario.className = 'campo';
+                novoCampoHorario.innerHTML = `
+                    <label for="horario">Horário Adicional:</label>
+                    <input type="text" name="horario_personalizado" required>
+                `;
+                horariosAdicionais.appendChild(novoCampoHorario);
+            });
+        });
+    </script>
+    <section id="creche">
+        <h2><img src="LOGO MUNDO ANIMAL.png" alt="Creche"> Creche</h2>
+        <form id="creche-form">
+            <label for="nome-cachorro">Nome do Cachorro:</label>
+            <input type="text" id="nome-cachorro" name="nome-cachorro" required><br>
+            <label for="idade-cachorro">Idade do Cachorro:</label>
+            <input type="number" id="idade-cachorro" name="idade-cachorro" required><br>
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required><br>
+            <label for="periodo-hospedagem">Período de Hospedagem:</label>
+            <select id="periodo-hospedagem" name="periodo-hospedagem">
+                <option value="1 semana">1 Semana</option>
+                <option value="2 semanas">2 Semanas</option>
+                <option value="1 mês">1 Mês</option>
+                <option value="2 meses">2 Meses</option>
+                <!-- Adicione mais opções de período aqui -->
+            </select><br>
+            <label for="quantidade-dias">ou</label>
+            <input type="number" id="quantidade-dias" name="quantidade-dias" placeholder="Quantidade de Dias"><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <section id="galeria">
+        <h2><img src="LOGO MUNDO ANIMAL.png" alt="Galeria"> Galeria</h2>
+        <div class="gallery-carousel">
+            <div class="gallery">
+                <img src="WhatsApp Image 2023-08-31 at 14.53.34.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.53.35.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.53.36.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.53.37.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.54.23.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.54.25.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.54.26.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 14.54.27.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 15.43.52.jpg" alt="Aumiguinhos">
+                <img src="WhatsApp Image 2023-08-31 at 15.43.54.jpg" alt="Aumiguinhos">
+                <img src="IMG_4154.jpg" alt="Aumiguinhos">
+                <img src="IMG_4155.jpg" alt="Aumiguinhos">
+                <img src="IMG_4159.jpg" alt="Aumiguinhos">
+
+            </div>
+
+            <div class="modal" id="myModal">
+                <span class="close" id="closeModal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <script>
+                    var currentImageIndex = 0;
+                    var galleryImages = document.querySelectorAll('.gallery img');
+                
+                    // Função para avançar para a próxima imagem
+                    function nextImage() {
+                        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+                        updateModalImage();
+                    }
+                
+                    // Função para voltar para a imagem anterior
+                    function prevImage() {
+                        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                        updateModalImage();
+                    }
+                
+                    // Função para atualizar a imagem no modal
+                    function updateModalImage() {
+                        var modalImage = document.getElementById('modalImage');
+                        modalImage.src = galleryImages[currentImageIndex].src;
+                    }
+                
+                    // Adicionar um ouvinte de eventos para detectar a pressão das teclas de seta
+                    document.addEventListener('keydown', function (event) {
+                        if (event.key === 'ArrowRight') {
+                            nextImage();
+                        } else if (event.key === 'ArrowLeft') {
+                            prevImage();
+                        }
+                    });
+                
+                    function openModal(imageSrc) {
+                        var modal = document.getElementById('myModal');
+                        var modalImage = document.getElementById('modalImage');
+                
+                        // Encontre o índice da imagem clicada
+                        currentImageIndex = Array.from(galleryImages).findIndex(function (image) {
+                            return image.src === imageSrc;
+                        });
+                
+                        modal.style.display = 'block';
+                        modalImage.src = imageSrc;
+                    }
+                
+                    // Fecha o modal quando o usuário clica no botão de fechar
+                    var closeModalButton = document.getElementById('closeModal');
+                    closeModalButton.addEventListener('click', function () {
+                        var modal = document.getElementById('myModal');
+                        modal.style.display = 'none';
+                    });
+                
+                    // Fecha o modal quando o usuário clica fora dele
+                    window.addEventListener('click', function (event) {
+                        var modal = document.getElementById('myModal');
+                        if (event.target == modal) {
+                            modal.style.display = 'none';
+                        }
+                    });
+                
+                    // Adicione um ouvinte de eventos de clique a cada imagem na galeria
+                    galleryImages.forEach(function (image) {
+                        image.addEventListener('click', function () {
+                            openModal(image.src);
+                        });
+                    });
+                    // Obtém todas as imagens da galeria
+var galleryImages = document.querySelectorAll('.gallery img');
+
+// Converte a NodeList em uma matriz para facilitar a manipulação
+var imagesArray = Array.from(galleryImages);
+
+// Embaralha a ordem das imagens aleatoriamente
+for (var i = imagesArray.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    [imagesArray[i], imagesArray[j]] = [imagesArray[j], imagesArray[i]];
+}
+
+// Atualiza a galeria com a nova ordem de imagens
+var gallery = document.querySelector('.gallery');
+gallery.innerHTML = ''; // Limpa a galeria
+imagesArray.forEach(function (image) {
+    gallery.appendChild(image);
+});
+
+                </script>
+            </div>
+    </section>
+
+    <section id="contato">
+        <h2><img src="LOGO MUNDO ANIMAL.png" alt="Contato"> Contato</h2>
+        <div class="contato-info">
+            <p>Endereço: Avenida Melvin Jones, 2467, Residencial Moyses de Freitas, Vilhena RO, 76968-899</p>
+            <p>Email: mundoanimalvha@gmail.com</p>
+            <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5569992910239" target="_blank">(69) 99291-0239</a></p>
+            <p>Instagram: <a href="https://instagram.com/mundo.animal.vha?igshid=NzZlODBkYWE4Ng==" target="_blank">@mundo.animal.vha</a></p>
+            <img src="QRcode whatsapp.jpg" alt="Código QR para contato" class="qr-code">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mundo Animal Pet Shop</p>
+    </footer>
+</body>
+</html>

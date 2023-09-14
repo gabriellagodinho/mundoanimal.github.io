@@ -1,0 +1,593 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Substitua 'Roboto' pela fonte desejada */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(4, 6, 38);
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o título */
+header h1 {
+    color: white; /* Altera a cor do título para branco */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para cada seção */
+section {
+    padding: 50px;
+}
+
+/* Estilos para os ícones */
+nav a img,
+h2 img {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+
+/* Estilos para a galeria */
+.gallery-carousel {
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    animation: carousel-slide 20s infinite linear; /* Adicione a animação aqui */
+    width: max-content; /* Garante que o contêiner não envolva as imagens */
+}
+
+.gallery img {
+    max-width: 100%;
+    max-height: 200px; /* Defina a altura máxima desejada */
+    margin-right: 10px;
+    transition: transform 0.3s; /* Adicione a transição para o efeito de zoom */
+}
+
+/* Efeito de zoom ao passar o mouse */
+.gallery img:hover {
+    transform: scale(1.2); /* Amplia a imagem em 20% */
+}
+
+/* Efeito do carrossel */
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ... (estilos anteriores) ... */
+
+/* Estilos para a seção de Agendamento */
+#agendamento {
+    background-color: #f4f4f4;
+    padding: 50px;
+    color: #333;
+}
+
+#agendamento h2 {
+    color: #00bfff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#agendamento-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#agendamento-form input,
+#agendamento-form select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#agendamento-form button {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para a seção de Creche */
+#creche {
+    background-color: #f4f4f4;
+    padding: 50px;
+    color: #333;
+}
+
+#creche h2 {
+    color: #00bfff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#creche-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#creche-form input,
+#creche-form select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#creche-form button {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ... (estilos anteriores) ... */
+
+/* Estilos para a galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Estilos para os botões de navegação */
+.icon-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.icon-button img {
+    max-width: 40px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.icon-button:hover {
+    background-color: #0080ff;
+}
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  /* Estilos para os títulos das seções */
+  section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilos para os formulários */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* Estilos para a galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery label {
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Alterado para um valor maior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+}
+
+.modal-toggle {
+    display: none;
+}
+
+.modal-toggle:checked ~ .modal {
+    display: block;
+}
+
+.modal-toggle:checked ~ .modal .modal-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-image {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+/* Estilos para a galeria */
+.gallery-carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    animation: carousel-slide 20s infinite linear;
+    width: max-content;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.gallery img:hover {
+    transform: scale(1.5);
+}
+
+/* Efeito do carrossel */
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 10px)); /* Inclui a largura da margem entre as imagens */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo semi-transparente (branco com 80% de opacidade) */
+    background-image: url('pngwing.com\ \(3\).png'); /* Substitua pelo caminho da sua imagem de patinhas */
+    background-repeat: repeat;
+    background-size: auto; /* Ajuste isso para o tamanho da imagem */
+}
+
+/* Defina a opacidade das patinhas */
+body::after {
+    content: "";
+    background-image: url('pngwing.com\ \(3\).png'); /* Substitua pelo caminho da sua imagem de patinhas */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2; /* Ajuste a opacidade conforme necessário (0.2 = 20%) */
+    pointer-events: none; /* Isso permite que os elementos abaixo sejam clicados */
+    z-index: -1; /* Coloca as patinhas atrás de todos os outros elementos */
+}
+
+
+/* Destaque para a seção de Contato */
+#contato {
+    background-color: #f7f7f7; /* Cor de fundo para enfatizar */
+    padding: 20px;
+    border-top: 2px solid #ffffff; /* Linha superior destacada */
+    border-bottom: 2px solid #ffffff; /* Linha inferior destacada */
+}
+
+/* Destaque para a seção de Agendamento */
+#agendamento {
+    background-color: #ffffff; /* Cor de fundo para enfatizar */
+    padding: 20px;
+    border-top: 2px solid #ffffff; /* Linha superior destacada */
+    border-bottom: 2px solid #ffffff; /* Linha inferior destacada */
+}
+
+/* Destaque para a seção de Creche */
+#creche {
+    background-color: #f7f7f7; /* Cor de fundo para enfatizar */
+    padding: 20px;
+    border-top: 2px solid #ffffff; /* Linha superior destacada */
+    border-bottom: 2px solid #ffffff; /* Linha inferior destacada */
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.box {
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+/* Estilização da área de acesso no rodapé */
+footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+}
+
+.access {
+    margin-top: 20px;
+}
+/* Estilização da seção de serviços */
+#servicos {
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 40px 0; /* Espaçamento interno */
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+}
+
+.servicos-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicos-lista li {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.servicos-lista li:hover {
+    transform: translateY(-5px);
+}
+
+.servicos-lista h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.servicos-lista p {
+    font-size: 16px;
+    color: #777;
+}
+/* Estilize o código QR na seção de contato */
+#contato {
+    position: relative; /* Permite posicionar elementos filhos relativos a este contêiner */
+}
+
+#contato img.qr-code {
+    max-width: 50%; /* O código QR terá no máximo 100% da largura do contêiner */
+    height: 80%; /* Mantenha a proporção original */
+    position: absolute; /* Posicione absolutamente dentro da seção de contato */
+    right: 20px; /* Afaste-o 20px do lado direito */
+    top: 50%; /* Centralize verticalmente */
+    transform: translateY(-50%); /* Ajuste para centralizar verticalmente */
+}
+
+/* Estilo CSS */
+#sobre-nos.minimalista {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+}
+
+.descricao {
+    margin-top: 20px;
+}
+
+.descricao h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.descricao p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
